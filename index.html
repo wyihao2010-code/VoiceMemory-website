@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b11">
+  <meta name="description" content="Voice Memory 是一款本机运行的 macOS 语音记忆应用。录音、离线转写、人物声纹、项目与事件，都由你掌控。">
+  <meta property="og:title" content="Voice Memory · 让重要的话，留在你手里">
+  <meta property="og:description" content="本机录音与转写，建立经过确认的人物记忆。探索 Voice Memory 的交互演示。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://wyihao2010-code.github.io/VoiceMemory-website/assets/voice-memory-icon.png">
+  <title>Voice Memory — 让重要的话，留在你手里</title>
+  <link rel="icon" type="image/png" href="assets/voice-memory-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="site-header" id="top">
+    <nav class="nav shell" aria-label="主导航">
+      <a class="brand" href="#top" aria-label="Voice Memory 首页"><img src="assets/voice-memory-icon.png" alt="" width="31" height="31"><span>Voice Memory</span></a>
+      <div class="nav-links"><a href="#experience">交互体验</a><a href="#features">功能</a><a href="#privacy">隐私</a></div>
+      <a class="nav-cta" href="#get-started">了解使用方式 <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy reveal is-visible">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> 为 macOS 而作 · 本机优先</div>
+        <h1 id="hero-title">让重要的话，<br><span>留在你手里。</span></h1>
+        <p>声音会消散，记忆不必。Voice Memory 将录音、转写、人物与事件串成可回溯的脉络，一切都在你的 Mac 上完成。</p>
+        <div class="hero-actions"><a class="button button-primary" href="#experience">体验界面 <span aria-hidden="true">↗</span></a><a class="button button-text" href="#features">探索功能 <span aria-hidden="true">↓</span></a></div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="hero-halo"></div><div class="hero-disc"><div class="hero-wave"></div></div>
+        <div class="hero-art-caption"><span class="live-dot"></span> SOUND, REMEMBERED.</div>
+      </div>
+      <a class="scroll-cue" href="#intro"><span class="scroll-line"></span>向下探索</a>
+    </section>
+
+    <section class="intro section shell" id="intro">
+      <p class="section-kicker reveal">一种新的记录方式</p>
+      <h2 class="statement reveal">从一段声音，<br>到一份<span class="gradient-text">有线索的记忆。</span></h2>
+      <div class="intro-divider reveal"></div>
+      <div class="intro-grid reveal"><p>录下来。读得懂。找得到。</p><p>让每次对话都能回到具体的时间、人物和项目，而不是停留在一个难以翻找的音频文件里。</p></div>
+    </section>
+
+    <section class="experience section" id="experience" aria-labelledby="experience-title">
+      <div class="shell">
+        <div class="section-head reveal"><div><p class="section-kicker">亲自探索</p><h2 id="experience-title">记忆，在这里成形。</h2></div><p>切换界面，看看一条录音如何延伸为可检索的项目、人物和事件。</p></div>
+        <div class="demo-note reveal"><span class="demo-note-icon">✦</span> 可交互的产品示意 · 示例内容均为虚构，不会访问麦克风或本机文件</div>
+        <div class="app-stage reveal">
+          <div class="app-window" aria-label="Voice Memory 应用界面示意">
+            <div class="window-bar"><div class="traffic" aria-hidden="true"><i></i><i></i><i></i></div><span>Voice Memory</span><div class="window-bar-end">LOCAL / MAC</div></div>
+            <div class="app-body">
+              <div class="app-sidebar"><div class="app-brand"><img src="assets/voice-memory-icon.png" alt="" width="28" height="28"><div><strong>Voice Memory</strong><small>本机语音与人物记忆</small></div></div><div class="app-menu" role="tablist" aria-label="界面演示">
+                <button class="app-tab is-active" id="tab-record" role="tab" aria-selected="true" aria-controls="panel-record" data-panel="record"><span class="tab-symbol">◉</span> 录音</button>
+                <button class="app-tab" id="tab-projects" role="tab" aria-selected="false" aria-controls="panel-projects" data-panel="projects"><span class="tab-symbol">▤</span> 项目</button>
+                <button class="app-tab" id="tab-people" role="tab" aria-selected="false" aria-controls="panel-people" data-panel="people"><span class="tab-symbol">◫</span> 人物库</button>
+                <button class="app-tab" id="tab-events" role="tab" aria-selected="false" aria-controls="panel-events" data-panel="events"><span class="tab-symbol">◇</span> Agent 与事件</button>
+              </div><div class="sidebar-bottom"><span class="shield">✧</span> 声纹只保存在这台 Mac</div></div>
+              <div class="app-main">
+                <section class="app-panel is-active" id="panel-record" role="tabpanel" aria-labelledby="tab-record"><div class="panel-heading"><div><span class="mini-eyebrow">CAPTURE</span><h3>录音</h3><p>把此刻留在本机。</p></div><span class="panel-badge">设备端处理</span></div><div class="record-card"><div class="record-top"><span>新录音 · 产品讨论</span><span class="record-indicator"><i></i><span id="demo-status">准备就绪</span></span></div><div class="waveform" id="demo-waveform" aria-hidden="true"></div><div class="record-control"><button id="demo-play" class="round-control" type="button" aria-label="播放模拟演示">▶</button><div><strong id="demo-time">00:00</strong><small>点击播放，预览转写片段</small></div><span>示意演示</span></div></div><div class="transcript-card"><div class="card-title"><span>转写脉络</span><span class="quiet">本机转写示意</span></div><p id="demo-transcript"><b>说话人 A · 00:00</b><br>点击上方播放，查看声音如何变为可查找的文字。</p></div></section>
+                <section class="app-panel" id="panel-projects" role="tabpanel" aria-labelledby="tab-projects" hidden><div class="panel-heading"><div><span class="mini-eyebrow">ORGANIZE</span><h3>项目</h3><p>对话，都有归处。</p></div><span class="panel-badge">跨项目检索</span></div><div class="search-box"><span>⌕</span><input id="demo-search" type="search" placeholder="搜索项目或转写文字" aria-label="搜索示例项目"></div><div class="project-list" id="project-list"><button class="project-item is-selected" type="button" data-project="产品讨论"><span class="project-icon">▤</span><span><strong>产品讨论</strong><small>4 条录音 · 最近更新</small></span><span>↗</span></button><button class="project-item" type="button" data-project="周会记录"><span class="project-icon">▤</span><span><strong>周会记录</strong><small>2 条录音 · 昨天</small></span><span>↗</span></button><button class="project-item" type="button" data-project="灵感随记"><span class="project-icon">▤</span><span><strong>灵感随记</strong><small>3 条录音 · 本周</small></span><span>↗</span></button></div><div class="project-detail"><span class="mini-eyebrow">SELECTED PROJECT</span><p id="project-detail-text">产品讨论 · 会议中的重点与后续事项，连同原音频和转写稿保存在本机。</p></div></section>
+                <section class="app-panel" id="panel-people" role="tabpanel" aria-labelledby="tab-people" hidden><div class="panel-heading"><div><span class="mini-eyebrow">RECOGNIZE</span><h3>人物库</h3><p>知道是谁，也保留确认权。</p></div><span class="panel-badge">人工确认后学习</span></div><div class="people-grid"><div class="person-card"><div class="avatar avatar-one">林</div><div><strong>林悦</strong><small>已确认的人物</small></div><span class="person-check">✓</span></div><div class="person-card"><div class="avatar avatar-two">周</div><div><strong>周明</strong><small>已确认的人物</small></div><span class="person-check">✓</span></div></div><div class="review-card"><div class="review-icon">?</div><div><strong>这段声音可能来自林悦</strong><p>人物候选需要你确认。未确认的预测不会写入长期声纹样本。</p></div><button id="review-toggle" type="button">查看确认方式</button></div><p class="review-explain" id="review-explain" hidden>在 Mac 应用中打开对应录音片段，选择“指定人物”确认或更正；页面中的示意操作不会修改任何数据。</p></section>
+                <section class="app-panel" id="panel-events" role="tabpanel" aria-labelledby="tab-events" hidden><div class="panel-heading"><div><span class="mini-eyebrow">CONNECT</span><h3>Agent 与事件</h3><p>建议可以来自 Agent，决定始终由你作出。</p></div><span class="panel-badge">审核后入库</span></div><div class="event-flow"><div><span class="flow-num">01</span><strong>检索已有记忆</strong><small>项目、人物、转写和事件</small></div><span class="flow-arrow">→</span><div><span class="flow-num">02</span><strong>提出带证据的草稿</strong><small>外部音频导入或事件</small></div><span class="flow-arrow">→</span><div><span class="flow-num">03</span><strong>由你审核确认</strong><small>在应用中完成处理</small></div></div><div class="event-draft"><div><span class="draft-dot"></span><span>待审核事件草稿</span><small>不会自动入库</small></div><h4>产品方向讨论</h4><p>关联「产品讨论」录音 · 附有转写片段作为证据</p><span class="fake-action">在应用中审核 ↗</span></div></section>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="stage-caption reveal">真实应用采用 macOS 原生界面；此处为功能结构与交互方式的网页示意。</p>
+      </div>
+    </section>
+
+    <section class="features section shell" id="features"><div class="section-head reveal"><div><p class="section-kicker">从录音到理解</p><h2>每一步，都顺理成章。</h2></div><p>一套围绕真实对话而设计的本机工作流。</p></div><div class="feature-grid"><article class="feature-card feature-large reveal"><span class="feature-index">01 / CAPTURE</span><div class="feature-wave" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div><h3>录下声音，留下文字。</h3><p>支持麦克风与系统内部声音。停止录制后在本机完成转写，分段与时间点让内容可以回听、定位和检索。</p></div></article><article class="feature-card reveal"><span class="feature-index">02 / PEOPLE</span><div class="feature-visual people-visual" aria-hidden="true"><span>声纹候选</span><span class="visual-line"></span><span>人工确认</span></div><div><h3>记住人物，尊重不确定。</h3><p>声音只提供候选。确认或更正之后，样本才进入长期人物库；候选不被当成事实。</p></div></article><article class="feature-card reveal"><span class="feature-index">03 / CONTEXT</span><div class="feature-visual context-visual" aria-hidden="true"><span>录音</span><i></i><span>项目</span><i></i><span>事件</span></div><div><h3>把线索连起来。</h3><p>按项目整理、跨项目搜索，并将经确认的录音关联到事件。找到原话，也找到来龙去脉。</p></div></article></div></section>
+
+    <section class="privacy section" id="privacy"><div class="privacy-glow" aria-hidden="true"></div><div class="shell privacy-inner"><p class="section-kicker reveal">你的声音，你的边界</p><h2 class="reveal">私密，不是一个设置。<br><span>是整个产品的起点。</span></h2><p class="privacy-lead reveal">录音、转写、人物声纹留在你的 Mac。应用不会自动上传这些内容；已确认声纹加密保存，密钥由本机 Keychain 管理。</p><div class="privacy-points reveal"><div><span>01</span><strong>离线处理</strong><p>运行时无需网络连接。</p></div><div><span>02</span><strong>明确确认</strong><p>外部导入、人物与 Agent 草稿，都经应用内审核。</p></div><div><span>03</span><strong>保留掌控</strong><p>原始录音可保留，也可设置在成功转写后删除。</p></div></div></div></section>
+
+    <section class="closing section shell" id="get-started"><img class="closing-icon reveal" src="assets/voice-memory-icon.png" alt="Voice Memory 应用图标" width="86" height="86"><p class="section-kicker reveal">Voice Memory for macOS</p><h2 class="reveal">让值得记住的，<br>一直找得到。</h2><p class="reveal">目前是本地开发中的 macOS 实验应用，尚无公开安装包。支持 macOS 14 或更新版本的 Apple Silicon Mac。你可以查看网站项目与当前开发状态。</p><div class="closing-actions reveal"><a class="button button-primary" href="https://github.com/wyihao2010-code/VoiceMemory-website#readme" target="_blank" rel="noopener noreferrer">查看网站项目 <span aria-hidden="true">↗</span></a><a class="button button-text" href="#experience">再看一次演示 <span aria-hidden="true">↑</span></a></div></section>
+  </main>
+  <footer class="footer"><div class="shell footer-inner"><div class="brand"><img src="assets/voice-memory-icon.png" alt="" width="25" height="25"><span>Voice Memory</span></div><p>本机语音与人物记忆 · 产品示意网站</p><a href="#top">返回顶部 ↑</a></div></footer>
+</body>
+</html>
