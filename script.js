@@ -1,28 +1,3 @@
-const heroBars = [...document.querySelectorAll('.hero-soundline span')];
-heroBars.forEach((bar, index) => {
-  const distance = Math.abs(index - (heroBars.length - 1) / 2);
-  const envelope = Math.max(0.1, 1 - distance / (heroBars.length / 2));
-  const detail = Math.abs(Math.sin(index * 1.43) * Math.cos(index * 0.31));
-  bar.style.setProperty('--h', `${Math.round(12 + envelope * (36 + detail * 150))}px`);
-  bar.style.setProperty('--o', String(0.35 + envelope * 0.65));
-});
-
-const hero = document.querySelector('.hero');
-const heroVisual = document.querySelector('.hero-visual');
-if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  let framePending = false;
-  window.addEventListener('scroll', () => {
-    if (framePending) return;
-    framePending = true;
-    requestAnimationFrame(() => {
-      const progress = Math.min(1, window.scrollY / hero.offsetHeight);
-      heroVisual.style.transform = `translate3d(0, ${Math.round(progress * -70)}px, 0)`;
-      heroVisual.style.opacity = String(1 - progress * 0.7);
-      framePending = false;
-    });
-  }, { passive: true });
-}
-
 const tabs = [...document.querySelectorAll('.app-tab')];
 
 function activateTab(tab, moveFocus = false) {
