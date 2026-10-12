@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wyihao2010-code.github.io/VoiceMemory-website/sitemap.xml

@@ -4,32 +4,67 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#080c13">
-  <meta name="description" content="Voice Memory 是以声纹记忆为核心的 macOS 应用：人物候选、人工确认与持续优化，配合本机转写和 AI 摘要。">
+  <meta name="description" content="Voice Memory 是以声纹记忆为核心的 Mac 与 iPhone 应用：人物候选、人工确认与持续优化，配合本机转写、AI 摘要与跨设备加密迁移。">
   <meta property="og:title" content="Voice Memory · 让声音成为可确认的记忆">
-  <meta property="og:description" content="认识 Voice Memory 如何通过确认与纠错，持续改善人物声纹识别。">
+  <meta property="og:description" content="Mac 与 iPhone 上的声纹记忆：本机转写、人工确认、持续校准，以及跨设备加密迁移。">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://wyihao2010-code.github.io/VoiceMemory-website/assets/voice-memory-icon.png">
+  <meta property="og:site_name" content="Voice Memory">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:url" content="https://wyihao2010-code.github.io/VoiceMemory-website/">
+  <meta property="og:image" content="https://wyihao2010-code.github.io/VoiceMemory-website/assets/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Voice Memory 主视觉：品牌标识与「本机语音与人物记忆」三项目标，右侧为录音界面">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Voice Memory · 让声音成为可确认的记忆">
+  <meta name="twitter:description" content="Mac 与 iPhone 上的声纹记忆：本机转写、人工确认、持续校准，以及跨设备加密迁移。">
+  <meta name="twitter:image" content="https://wyihao2010-code.github.io/VoiceMemory-website/assets/og-cover.jpg">
   <title>Voice Memory — 让声音成为可确认的记忆</title>
-  <link rel="icon" type="image/png" href="assets/voice-memory-icon.png">
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="script.js"></script>
+  <link rel="canonical" href="https://wyihao2010-code.github.io/VoiceMemory-website/">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icon-180.png">
+  <link rel="stylesheet" href="styles.css?v=20261012">
+  <script defer src="script.js?v=20261012"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Voice Memory",
+    "alternateName": "VoiceMemory",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": "macOS 14+ (Apple Silicon), iOS 17+",
+    "inLanguage": "zh-CN",
+    "description": "以声纹记忆为核心的 Mac 与 iPhone 应用：本机录音与转写、人物候选与人工确认、纠错反馈驱动的持续校准、按需触发的 AI 摘要，以及跨设备加密迁移。",
+    "url": "https://wyihao2010-code.github.io/VoiceMemory-website/",
+    "image": "https://wyihao2010-code.github.io/VoiceMemory-website/assets/og-cover.jpg",
+    "softwareRequirements": "macOS 14 或更新版本（Apple Silicon），或 iOS 17 或更新版本",
+    "featureList": [
+      "本机录音与转写，中英文自动识别",
+      "人物候选与人工确认",
+      "仅确认的合格片段进入加密声纹库",
+      "按需触发的 AI 摘要与审核反写",
+      "Mac 与 iPhone 同账号，跨设备加密迁移与备份"
+    ]
+  }
+  </script>
 </head>
-<body>
+<body id="top">
   <a class="skip-link" href="#main">跳到主要内容</a>
-  <header class="site-header" id="top">
+  <header class="site-header">
     <nav class="nav shell" aria-label="主导航">
-      <a class="brand" href="#top" aria-label="Voice Memory 首页"><img src="assets/voice-memory-icon.png" alt="" width="32" height="32"><span>Voice Memory</span></a>
-      <div class="nav-links"><a href="#voiceprint">声纹记忆</a><a href="#workflow">工作方式</a><a href="#ai">AI 摘要</a><a href="#privacy">隐私边界</a></div>
+      <a class="brand" href="#top" aria-label="Voice Memory 首页"><picture><source srcset="assets/voice-memory-icon.webp" type="image/webp"><img src="assets/voice-memory-icon.png" alt="" width="32" height="32"></picture><span>Voice Memory</span></a>
+      <div class="nav-links" id="nav-links"><a href="#overview">产品一览</a><a href="#devices">多端</a><a href="#voiceprint">声纹记忆</a><a href="#ai">AI 摘要</a><a href="#privacy">隐私边界</a></div>
       <a class="nav-cta" href="#status">开发状态 <span aria-hidden="true">↗</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="打开导航菜单"><span class="nav-toggle-bars" aria-hidden="true"><i></i><i></i><i></i></span></button>
     </nav>
   </header>
 
   <main id="main">
     <section class="hero shell" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="eyebrow-dot"></span> VOICE MEMORY · 为 macOS 而作</p>
-        <h1 id="hero-title">听见声音。<br><span>逐渐记住是谁。</span></h1>
-        <p class="hero-lead">录音和转写只是起点。Voice Memory 通过人物候选、人工确认与纠错，让声纹记忆在一次次真实使用中持续校准。</p>
+        <p class="eyebrow"><span class="eyebrow-dot"></span> VOICE MEMORY · MAC 与 IPHONE</p>
+        <h1 id="hero-title">听见声音<br><span>逐渐记住是谁</span></h1>
+        <p class="hero-lead">录音和转写只是起点。Voice Memory 通过人物候选、人工确认与纠错，让声纹记忆在一次次真实使用中持续校准——同一账号，Mac 与 iPhone 各自在本机完成。</p>
         <div class="hero-actions"><a class="button button-primary" href="#voiceprint">看声纹如何成长 <span aria-hidden="true">↘</span></a><a class="button button-text" href="#ai">了解 AI 摘要 <span aria-hidden="true">↓</span></a></div>
         <p class="hero-footnote">声纹用于辅助标注，不用于身份认证。</p>
       </div>
@@ -43,9 +78,59 @@
       <a class="scroll-cue" href="#voiceprint"><span></span>向下了解</a>
     </section>
 
+    <section class="overview section shell" id="overview" aria-labelledby="overview-title">
+      <div class="overview-head" data-reveal>
+        <p class="section-kicker">产品一览 / PRODUCT OVERVIEW</p>
+        <h2 id="overview-title">一个窗口，<br><em>装下声音、人物与项目</em></h2>
+        <p>录音在本机完成，人物由你确认，项目把声音、转写和说明留在同一处。这张主视觉给出的就是产品全貌——界面为设计稿渲染，不是可操作的网页应用。</p>
+      </div>
+      <figure class="overview-figure" data-reveal>
+        <img src="assets/voice-memory-overview.webp" alt="Voice Memory 主视觉：品牌标识与「本机语音与人物记忆」，三项目标为语音录制、人物识别、项目管理；右侧为录音界面，含归属项目选择与开始录音按钮" width="1672" height="941" loading="lazy" decoding="async">
+        <figcaption><span class="visual-dot"></span> 产品主视觉 <small>界面为设计稿渲染</small></figcaption>
+      </figure>
+    </section>
+
+    <section class="devices section shell" id="devices" aria-labelledby="devices-title">
+      <div class="devices-heading" data-reveal>
+        <p class="section-kicker">两个平台 / MAC 与 IPHONE</p>
+        <h2 id="devices-title">Mac 与 iPhone，<br><em>共用一个账号</em></h2>
+        <p>Mac 版与 iPhone 版使用同一个云端账号与同一份权益。录音、转写、声纹与 API 凭证在两台设备上各自保存在本机——登录不会上传它们。</p>
+      </div>
+      <div class="devices-stage" data-reveal aria-label="示意画面：Mac 窗口与 iPhone 之间进行加密的项目、人物与录音迁移">
+        <div class="device-mac">
+          <div class="device-mac-bar"><i></i><i></i><i></i><span>项目 · 会议记录</span></div>
+          <div class="device-mac-body">
+            <div class="mini-project"><span class="mini-label">归属项目</span><strong>产品周会</strong><span class="mini-chev">⌄</span></div>
+            <div class="mini-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="mini-record"><span class="mini-dot"></span>录音中 · 00:42</div>
+          </div>
+        </div>
+        <div class="devices-link" aria-hidden="true">
+          <span class="link-bolt">⇄</span>
+          <div class="link-labels"><small>加密迁移包</small><small>AirDrop / 文件</small></div>
+        </div>
+        <div class="device-phone">
+          <div class="phone-island" aria-hidden="true"></div>
+          <div class="device-phone-body">
+            <span class="phone-state">Face ID 已解锁</span>
+            <strong class="phone-title">今天的会议</strong>
+            <div class="mini-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <span class="phone-person">◎ 示例人物 · 已确认</span>
+            <span class="phone-transcript">转写在本机完成</span>
+          </div>
+        </div>
+      </div>
+      <p class="devices-note" data-reveal><span class="visual-dot"></span> 示意画面 <small>非真实界面截图</small></p>
+      <div class="devices-cards" data-reveal>
+        <div><span>01 / SAME ACCOUNT</span><h3>一个账号，两台设备</h3><p>邮箱注册与登录，云端账号只承载身份与权益；两边看到同样的项目与人物。</p></div>
+        <div><span>02 / LOCAL DATA</span><h3>数据留在各自本机</h3><p>iPhone 上的录音、转写与声纹只保存在 iPhone；API 凭证同样不离开设备。</p></div>
+        <div><span>03 / ENCRYPTED MOVE</span><h3>迁移与备份都加密</h3><p>项目与人物通过密码加密包互传，录音包含音频与说话人标签；完整备份另含恢复密钥。</p></div>
+      </div>
+    </section>
+
     <section class="thesis section shell" id="voiceprint" aria-labelledby="voiceprint-title">
       <p class="section-kicker" data-reveal>产品核心 / VOICEPRINT MEMORY</p>
-      <h2 id="voiceprint-title" data-reveal>真正的记忆，<br><em>始于你的确认。</em></h2>
+      <h2 id="voiceprint-title" data-reveal>真正的记忆，<br><em>始于你的确认</em></h2>
       <div class="thesis-grid" data-reveal><p class="thesis-large">第一次听见，给出候选。<br>你确认或更正。<br>下一次，判断有了依据。</p><p>应用把每段语音与已确认的人物样本比较，同时保留不确定性。只有你确认的合格片段才会成为长期声纹样本；纠错会留下反馈，帮助后续匹配与阈值调整。</p></div>
       <div class="loop-diagram" role="img" aria-label="声纹记忆流程：声音片段生成候选，由用户确认或纠错，合格样本进入人物库，后续识别继续接受反馈" data-reveal>
         <div class="loop-node"><span>01</span><strong>听见声音</strong><small>分段分析</small></div><div class="loop-connector"></div>
@@ -56,20 +141,47 @@
     </section>
 
     <section class="story section" id="workflow" aria-labelledby="workflow-title"><div class="shell">
-      <div class="section-heading" data-reveal><div><p class="section-kicker">产品介绍动画 / HOW IT WORKS</p><h2 id="workflow-title">一段声音，<br>如何变成人物记忆。</h2></div><p>滚动页面，跟随 Voice Memory 的核心流程。画面是产品机制的示意，不是可操作的网页应用。</p></div>
-      <article class="story-row" data-reveal><div class="story-copy"><span class="story-index">01 / CAPTURE</span><h3>先保留声音，<br>再读出线索。</h3><p>录制麦克风或 Mac 内部声音，在本机完成转写和说话人分段。时间点让文字能够回到原音频。</p><div class="story-detail"><span>本机处理</span><span>分段与时间点</span></div></div><div class="visual visual-capture" aria-label="Voice Memory 真实录音界面局部截图，未包含用户录音或转写"><img class="real-screenshot" src="assets/voice-memory-recording.png" alt="Voice Memory App 录音页面，显示项目选择、麦克风与系统内部声音选项" loading="lazy" width="1900" height="1000"><div class="screenshot-caption"><span class="visual-dot"></span> 真实 App 界面局部 <small>未包含用户录音</small></div></div></article>
-      <article class="story-row reverse" data-reveal><div class="story-copy"><span class="story-index">02 / RECOGNIZE</span><h3>识别给出候选，<br>你保留判断权。</h3><p>应用根据已有声纹提示可能的说话人。候选不会自动变成事实；你可以逐段确认、更正，或新建人物。</p><div class="story-detail"><span>人物候选</span><span>人工确认</span></div></div><div class="visual visual-person" aria-label="示意画面：人物候选经用户确认后成为已确认标注"><div class="person-sound"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="person-candidate"><span class="candidate-avatar">?</span><div><small>这段声音可能来自</small><strong>示例人物 · 待确认</strong></div><span class="candidate-mark">?</span></div><div class="person-result"><span class="candidate-avatar confirmed">✓</span><div><small>人工核对后</small><strong>示例人物 · 已确认</strong></div><span class="result-line"></span></div><div class="visual-caption">人物名称仅为示意</div></div></article>
-      <article class="story-row" data-reveal><div class="story-copy"><span class="story-index">03 / LEARN</span><h3>确认积累样本，<br>纠错推动改进。</h3><p>合格的确认片段进入加密声纹库。应用记录确认与纠错反馈，并在跨录音、跨日期的留出数据足够时验证阈值；证据不足就沿用现有设置。</p><div class="story-detail"><span>质量筛选</span><span>有条件的自动优化</span></div></div><div class="visual visual-learn" aria-label="示意画面：经过确认的声纹样本与纠错反馈汇集，进入经过验证的优化流程"><div class="learn-center"><span>◎</span><strong>人物声纹记忆</strong><small>仅确认的合格样本</small></div><div class="learn-card learn-one"><span class="learn-icon">✓</span><div><strong>确认样本</strong><small>加密保存</small></div></div><div class="learn-card learn-two"><span class="learn-icon">↶</span><div><strong>纠错反馈</strong><small>保留记录</small></div></div><div class="learn-card learn-three"><span class="learn-icon">↗</span><div><strong>验证后调整</strong><small>不足则不改变</small></div></div><div class="learn-path path-one"></div><div class="learn-path path-two"></div><div class="learn-path path-three"></div><div class="visual-caption">识别效果取决于实际样本与环境</div></div></article>
+      <div class="section-heading" data-reveal><div><p class="section-kicker">产品介绍动画 / HOW IT WORKS</p><h2 id="workflow-title">一段声音，<br>如何变成人物记忆</h2></div><p>滚动页面，跟随 Voice Memory 的核心流程。画面是产品机制的示意，不是可操作的网页应用。</p></div>
+      <article class="story-row" data-reveal><div class="story-copy"><span class="story-index">01 / CAPTURE</span><h3>先保留声音，<br>再读出线索</h3><p>录制麦克风或 Mac 内部声音，在本机完成转写和说话人分段；中英文自动识别，macOS 15 起还可在本机完成英文到中文的逐句翻译。时间点让文字能够回到原音频。</p><div class="story-detail"><span>本机处理</span><span>中英自动识别</span><span>分段与时间点</span></div></div><div class="visual visual-capture" aria-label="Voice Memory 真实录音界面局部截图，未包含用户录音或转写"><picture><source srcset="assets/voice-memory-recording.webp" type="image/webp"><img class="real-screenshot" src="assets/voice-memory-recording.png" alt="Voice Memory App 录音页面，显示项目选择、麦克风与系统内部声音选项" loading="lazy" width="1900" height="1000"></picture><div class="screenshot-caption"><span class="visual-dot"></span> 真实 App 界面局部 <small>未包含用户录音</small></div></div></article>
+      <article class="story-row reverse" data-reveal><div class="story-copy"><span class="story-index">02 / RECOGNIZE</span><h3>识别给出候选，<br>你保留判断权</h3><p>应用根据已有声纹提示可能的说话人。候选不会自动变成事实；你可以逐段确认、更正，或新建人物。</p><div class="story-detail"><span>人物候选</span><span>人工确认</span></div></div><div class="visual visual-person" aria-label="示意画面：人物候选经用户确认后成为已确认标注"><div class="person-sound"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="person-candidate"><span class="candidate-avatar">?</span><div><small>这段声音可能来自</small><strong>示例人物 · 待确认</strong></div><span class="candidate-mark">?</span></div><div class="person-result"><span class="candidate-avatar confirmed">✓</span><div><small>人工核对后</small><strong>示例人物 · 已确认</strong></div><span class="result-line"></span></div><div class="visual-caption">人物名称仅为示意</div></div></article>
+      <article class="story-row" data-reveal><div class="story-copy"><span class="story-index">03 / LEARN</span><h3>确认积累样本，<br>纠错推动改进</h3><p>合格的确认片段进入加密声纹库。应用记录确认与纠错反馈，并在跨录音、跨日期的留出数据足够时验证阈值；证据不足就沿用现有设置。</p><div class="story-detail"><span>质量筛选</span><span>有条件的自动优化</span></div></div><div class="visual visual-learn" aria-label="示意画面：经过确认的声纹样本与纠错反馈汇集，进入经过验证的优化流程"><svg class="learn-links" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><line x1="25.9" y1="25" x2="39.7" y2="38.7"/><line x1="75.2" y1="30.3" x2="61.2" y2="40.7"/><line x1="50" y1="76.4" x2="50" y2="67.1"/></svg><div class="learn-center"><span>◎</span><strong>人物声纹记忆</strong><small>仅确认的合格样本</small></div><div class="learn-card learn-one"><span class="learn-icon">✓</span><div><strong>确认样本</strong><small>加密保存</small></div></div><div class="learn-card learn-two"><span class="learn-icon">↶</span><div><strong>纠错反馈</strong><small>保留记录</small></div></div><div class="learn-card learn-three"><span class="learn-icon">↗</span><div><strong>验证后调整</strong><small>不足则不改变</small></div></div><div class="visual-caption">识别效果取决于实际样本与环境</div></div></article>
     </div></section>
 
-    <section class="ai-section section" id="ai" aria-labelledby="ai-title"><div class="shell ai-grid"><div class="ai-copy" data-reveal><p class="section-kicker">进一步理解 / AI SUMMARY</p><h2 id="ai-title">认得出是谁。<br><em>也读得懂说了什么。</em></h2><p>需要时，使用 API 或 ChatGPT 订阅额度生成结构化摘要。摘要可写回对应录音；Agent 提交的摘要草稿，则先在应用内审核、修改，再决定是否反写。</p><div class="ai-points"><div><span>01</span><strong>按需生成</strong><small>用户主动触发后，才将该录音转写发送给所选服务。</small></div><div><span>02</span><strong>审核反写</strong><small>Agent 草稿在你确认前，不改动录音说明。</small></div><div><span>03</span><strong>可追溯</strong><small>保留生成记录及被覆盖的旧摘要，可在应用中恢复。</small></div></div></div><div class="ai-art" data-reveal aria-label="示意画面：录音转写经 AI 生成摘要，审核后关联到原录音"><div class="ai-source"><span>原始转写</span><div class="text-lines"><i></i><i></i><i></i><i></i></div><small>与原音频、人物标记相连</small></div><div class="ai-beam"><span>✦</span></div><div class="ai-summary"><span>AI 摘要 · 示例结构</span><strong>这次讨论的主要内容</strong><div class="summary-line"><b>01</b><i></i></div><div class="summary-line"><b>02</b><i></i></div><div class="summary-line"><b>03</b><i></i></div><div class="summary-review">✓ 经确认后写回录音</div></div></div></div></section>
+    <section class="ai-section section" id="ai" aria-labelledby="ai-title"><div class="shell ai-grid"><div class="ai-copy" data-reveal><p class="section-kicker">进一步理解 / AI SUMMARY</p><h2 id="ai-title">认得出是谁<br><em>也读得懂说了什么</em></h2><p>需要时，使用 OpenAI、Claude、DeepSeek、火山方舟或自定义兼容服务的 API，或 ChatGPT 订阅额度生成结构化摘要；摘要模板可以自定义，长度上限与结构校验由系统强制执行。摘要可写回对应录音；Agent 提交的摘要草稿，则先在应用内审核、修改，再决定是否反写。</p><div class="ai-points"><div><span>01</span><strong>按需生成</strong><small>用户主动触发后，才将该录音转写发送给所选服务。</small></div><div><span>02</span><strong>模板可自定义</strong><small>内容组织由你定义；字数与事实校验仍然生效。</small></div><div><span>03</span><strong>审核反写</strong><small>Agent 草稿在你确认前，不改动录音说明。</small></div></div></div><div class="ai-art" data-reveal aria-label="示意画面：录音转写经 AI 生成摘要，审核后关联到原录音"><div class="ai-source"><span>原始转写</span><div class="text-lines"><i></i><i></i><i></i><i></i></div><small>与原音频、人物标记相连</small></div><div class="ai-beam"><span>✦</span></div><div class="ai-summary"><span>AI 摘要 · 示例结构</span><strong>这次讨论的主要内容</strong><div class="summary-line"><b>01</b><i></i></div><div class="summary-line"><b>02</b><i></i></div><div class="summary-line"><b>03</b><i></i></div><div class="summary-review">✓ 经确认后写回录音</div></div></div></div></section>
 
-    <section class="context section shell" aria-labelledby="context-title"><div class="context-heading" data-reveal><p class="section-kicker">记忆有来处 / CONTEXT</p><h2 id="context-title">声音、人物与事件，<br>始终能回到原处。</h2><p>按项目整理录音，搜索人物、标题或转写。Agent 可通过本地 MCP 检索线索，并提交外部音频导入、事件或摘要草稿；关键写入由你在 App 中审核。</p></div><div class="context-cards" data-reveal><div><span>PROJECTS</span><strong>按项目归档</strong><p>音频、转写稿和说明保持对应。</p></div><div><span>PEOPLE</span><strong>按确认的人物回看</strong><p>候选与确认状态明确区分。</p></div><div><span>REVIEW</span><strong>由你决定写入</strong><p>Agent 请求和草稿进入应用内审核。</p></div></div></section>
+    <section class="account section shell" id="account" aria-labelledby="account-title">
+      <div class="account-heading" data-reveal>
+        <div>
+          <p class="section-kicker">清晰的所有权 / ACCOUNT &amp; PLANS</p>
+          <h2 id="account-title">账号区分身份，<br><em>权益决定能力</em></h2>
+        </div>
+        <p>云端账号只承载身份与权益：登录不上传录音、转写或声纹。核心能力对所有人完整可用；进阶能力通过权益解锁，兑换码即可激活。</p>
+      </div>
+      <div class="account-grid" data-reveal>
+        <div class="account-card">
+          <div class="plan-tag free">FREE</div>
+          <h3>核心体验，完整可用</h3>
+          <ul><li>录音、本机转写与播放定位</li><li>人物候选、确认与基础声纹匹配</li><li>项目、事件与双语稿导出</li><li>持续学习：3 个固定席位</li></ul>
+        </div>
+        <div class="account-card pro">
+          <div class="plan-tag">PRO</div>
+          <h3>进阶能力，权益解锁</h3>
+          <ul><li>全部人物参与持续学习与自动优化</li><li>本地 MCP 与外部 Agent 接入</li><li>权益兑换码激活，重启与离线均保持</li></ul>
+        </div>
+        <div class="account-card note">
+          <div class="plan-tag plain">账号</div>
+          <h3>你的数据不属于云端</h3>
+          <ul><li>邮箱与昵称仅用于登录，密码存于本机钥匙串</li><li>不使用账号，核心功能照常工作</li><li>购买渠道建设中，当前以兑换码方式发放权益</li></ul>
+        </div>
+      </div>
+    </section>
 
-    <section class="privacy section" id="privacy" aria-labelledby="privacy-title"><div class="shell"><div class="privacy-heading" data-reveal><p class="section-kicker">你的声音，你的边界</p><h2 id="privacy-title">本机优先。<br><em>每一步都有边界。</em></h2></div><div class="privacy-grid" data-reveal><div><span>01 / LOCAL</span><h3>录音与转写在本机</h3><p>核心录音、转写和声纹分析在 Mac 上完成。已确认声纹以本机密钥加密保存。</p></div><div><span>02 / REVIEW</span><h3>人物与草稿需确认</h3><p>声纹候选不是身份事实。外部导入、事件和 Agent 摘要草稿经过应用内审核。</p></div><div><span>03 / OPTIONAL AI</span><h3>云端摘要由你触发</h3><p>选择 AI 摘要并点击生成后，完整转写及已确认说话人姓名会发送给所选服务；需要网络连接。</p></div></div></div></section>
+    <section class="context section shell" aria-labelledby="context-title"><div class="context-heading" data-reveal><p class="section-kicker">记忆有来处 / CONTEXT</p><h2 id="context-title">声音、人物与事件<br>始终能回到原处</h2><p>按项目整理录音，搜索人物、标题或转写。Agent 可通过本地 MCP 检索线索，并提交外部音频导入、事件或摘要草稿；关键写入由你在 App 中审核。</p></div><div class="context-cards" data-reveal><div><span>PROJECTS</span><strong>按项目归档</strong><p>音频、转写稿和说明保持对应。</p></div><div><span>PEOPLE</span><strong>按确认的人物回看</strong><p>候选与确认状态明确区分。</p></div><div><span>REVIEW</span><strong>由你决定写入</strong><p>Agent 请求和草稿进入应用内审核。</p></div></div></section>
 
-    <section class="closing section shell" id="status"><img src="assets/voice-memory-icon.png" alt="Voice Memory 应用图标" width="84" height="84" data-reveal><p class="section-kicker" data-reveal>VOICE MEMORY FOR MACOS</p><h2 data-reveal>让声音成为<br>可确认的记忆。</h2><p data-reveal>Voice Memory 仍处于本地开发阶段，暂无公开安装包。适用于 macOS 14 或更新版本的 Apple Silicon Mac。iCloud 同步暂未作为可用功能提供。</p><div class="closing-actions" data-reveal><a class="button button-primary" href="#voiceprint">再看声纹记忆 <span aria-hidden="true">↑</span></a><a class="button button-text" href="https://github.com/wyihao2010-code/VoiceMemory-website#readme" target="_blank" rel="noopener noreferrer">查看网站项目 <span aria-hidden="true">↗</span></a></div></section>
+    <section class="privacy section" id="privacy" aria-labelledby="privacy-title"><div class="shell"><div class="privacy-heading" data-reveal><p class="section-kicker">你的声音，你的边界</p><h2 id="privacy-title">本机优先<br><em>每一步都有边界</em></h2></div><div class="privacy-grid" data-reveal><div><span>01 / LOCAL</span><h3>录音与转写在本机</h3><p>核心录音、转写和声纹分析在设备上完成。已确认声纹以本机密钥加密保存；应用不含统计埋点、崩溃上报或广告追踪。</p></div><div><span>02 / REVIEW</span><h3>人物与草稿需确认</h3><p>声纹候选不是身份事实。外部导入、事件和 Agent 摘要草稿经过应用内审核。</p></div><div><span>03 / OPTIONAL AI</span><h3>云端摘要由你触发</h3><p>智能摘要是唯一可能让录音内容离开本机的功能：只有你选择并点击生成，转写才会发送给所选服务。</p></div></div><p class="privacy-footnote" data-reveal>云端账号仅将邮箱与昵称提交给账号服务用于登录，不会因此上传录音、转写或声纹。完整边界见应用内隐私政策。</p></div></section>
+
+    <section class="closing section shell" id="status"><picture><source srcset="assets/voice-memory-icon.webp" type="image/webp"><img src="assets/voice-memory-icon.png" alt="Voice Memory 应用图标" width="84" height="84" data-reveal></picture><p class="section-kicker" data-reveal>VOICE MEMORY</p><h2 data-reveal>让声音成为可确认的记忆</h2><p data-reveal>Mac 版适用于 macOS 14 或更新版本的 Apple Silicon Mac，iPhone 版适用于 iOS 17 或更新版本。公开测试包仍在准备中：iCloud 同步暂未作为可用功能提供，在线购买渠道尚未开通，当前以兑换码方式发放权益。</p><div class="closing-actions" data-reveal><a class="button button-primary" href="#voiceprint">再看声纹记忆 <span aria-hidden="true">↑</span></a><a class="button button-text" href="https://github.com/wyihao2010-code/VoiceMemory-website#readme" target="_blank" rel="noopener noreferrer">查看网站项目 <span aria-hidden="true">↗</span></a></div><div class="updates" data-reveal><span class="updates-label">获取开发进展</span><p>公开测试包尚未发布，也还没有订阅邮件——网站没有后端。想第一时间知道它什么时候可用，可以留下一个动作。</p><div class="updates-links"><a href="https://github.com/wyihao2010-code/VoiceMemory-website" target="_blank" rel="noopener noreferrer"><strong>Watch 仓库</strong><small>有新提交时收到通知</small></a><a href="https://github.com/wyihao2010-code/VoiceMemory-website/issues" target="_blank" rel="noopener noreferrer"><strong>提一条反馈</strong><small>说清你希望它先解决什么</small></a></div></div></section>
   </main>
-  <footer class="footer"><div class="shell footer-inner"><a class="brand" href="#top"><img src="assets/voice-memory-icon.png" alt="" width="25" height="25"><span>Voice Memory</span></a><p>以声纹记忆为核心的 macOS 应用 · 产品介绍网站</p><a href="#top">返回顶部 ↑</a></div></footer>
+  <footer class="footer"><div class="shell footer-inner"><a class="brand" href="#top"><picture><source srcset="assets/voice-memory-icon.webp" type="image/webp"><img src="assets/voice-memory-icon.png" alt="" width="25" height="25"></picture><span>Voice Memory</span></a><p>以声纹记忆为核心的 Mac 与 iPhone 应用 · 产品介绍网站</p><a href="#top">返回顶部 ↑</a></div></footer>
 </body>
 </html>
