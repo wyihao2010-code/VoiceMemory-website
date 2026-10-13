@@ -57,6 +57,7 @@
 .updates-links a:hover{transform:translateY(-3px);border-color:rgba(159,210,255,.36)}
 .updates-links strong{font-size:14px;color:#f3f8ff}
 .updates-links small{color:#8ba1b6;font-size:11px;line-height:1.6}
+.updates>p a{color:#a7dcff;text-decoration:underline;text-underline-offset:3px}
 /* ==========================================================================
    窄屏导航：820px 起收起为下拉面板（原 700px 直接隐藏，栏目不可达）
    ========================================================================== */
