@@ -26,7 +26,7 @@ VoiceMemory 是一款专为 Mac 与 iPhone 打造的智能语音记录与管理�
 ## Mac 与 iPhone，共用一个账号
 
 - **一个账号，两台设备**：邮箱注册与登录，Mac 与 iPhone 使用同一账号，可通过加密包迁移项目与人物。
-- **数据留在各自本机**：录音、转写默认保存在本机；可主动加密迁移，开启 iCloud 同步时部分结构化数据与已确认声纹向量会同步，登录不会上传它们。
+- **数据留在各自本机**：录音、转写默认保存在本机；可主动加密迁移；iCloud 同步尚未开放，后续如提供并主动开启，部分结构化数据与已确认声纹向量可能同步。登录不会上传录音和转写。
 - **迁移与备份都加密**：项目与人物通过加密迁移包在设备间互传，录音包含音频与说话人标签。
 - **系统要求**：Mac 版适用于 macOS 14 或更新版本的 Apple Silicon Mac；iPhone 版适用于 iOS 17 或更新版本。
 
@@ -87,7 +87,7 @@ VoiceMemory 希望改变这种体验。我们相信，录音的价值不只是�
 
 ## 获取开发进展
 
-测试版下载：[Mac DMG](https://github.com/wyihao2010-code/VoiceMemory-website/releases/download/v1.1.1-beta.1/VoiceMemory-1.1.1-Build36.dmg)；[iPhone IPA](https://github.com/wyihao2010-code/VoiceMemory-website/releases/download/v1.1.1-beta.1/VoiceMemoryIOS-0.1.1-Build4-registered-device.ipa)。iPhone 包仅能安装在签名描述文件中已登记的设备上。安装限制与 SHA-256 校验值见[版本说明](https://github.com/wyihao2010-code/VoiceMemory-website/releases/tag/v1.1.1-beta.1)。
+测试版下载：[Mac DMG](https://github.com/wyihao2010-code/VoiceMemory-website/releases/download/v1.2-beta.1/VoiceMemory-1.2-Build37.dmg)；[iPhone IPA](https://github.com/wyihao2010-code/VoiceMemory-website/releases/download/v1.2-beta.1/VoiceMemoryIOS-1.2-Build5-registered-device.ipa)。iPhone 包仅能安装在签名描述文件中的 1 台已登记设备上，描述文件于 2026 年 10 月 18 日到期。安装限制与 SHA-256 校验值见[版本说明](https://github.com/wyihao2010-code/VoiceMemory-website/releases/tag/v1.2-beta.1)。
 
 ## 本地预览
 
