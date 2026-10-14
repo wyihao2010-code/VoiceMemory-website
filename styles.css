@@ -214,3 +214,20 @@ picture{display:contents}
 @media(min-width:1001px){
   .ai-grid{grid-template-columns:1.18fr 1fr;gap:4%}
 }
+
+/* 架构总览：全宽结构示意图，与 overview 主视觉同一套图框语言 */
+.arch-figure{margin:52px 0 0;position:relative}
+.arch-figure img{width:100%;height:auto;display:block;border:1px solid rgba(159,210,255,.18);border-radius:24px;background:#0d1723;box-shadow:0 44px 100px rgba(0,0,0,.42);transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s}
+.arch-figure:hover img{transform:translateY(-5px);box-shadow:0 54px 120px rgba(30,110,190,.3)}
+.arch-figure figcaption{display:flex;align-items:center;gap:8px;margin:18px 4px 0;color:#8fa6bc;font-size:11px;letter-spacing:.04em}
+.arch-figure figcaption small{margin-left:auto;color:#6f8aa2;font-size:10px}
+
+/* 真实截图改为完整窗口后更高（16:10），放宽高度上限，避免被压小 */
+.real-screenshot{max-height:440px}
+@media(max-width:700px){
+  .arch-figure{margin-top:34px}
+  .arch-figure img{border-radius:18px}
+  .arch-figure figcaption{font-size:10px}
+  .arch-figure figcaption small{font-size:9px}
+  .real-screenshot{max-height:none}
+}

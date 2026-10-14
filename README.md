@@ -34,8 +34,8 @@ VoiceMemory 是一款专为 Mac 与 iPhone 打造的智能语音记录与管理�
 
 云端账号用于身份与权益；iPhone 需要登录，Mac 的本机核心功能可不登录使用：
 
-- **Free**：核心体验完整可用——录音、本机转写、人物确认、项目归档与基础导出。
-- **Pro**：进阶能力通过权益解锁，兑换码即可激活。
+- **Free**：本地能力完整开放——录音与导入、本机转写、无限人物与声纹学习、进阶声纹分析、项目与双语稿导出、AI 摘要与自定义模板、本地 MCP 与 Agent 接入。
+- **Pro**：本地功能已向所有用户开放，原有 Pro 权益继续保留；权益兑换码激活后，重启与离线均保持。
 - **你的数据不属于云端**：注册与登录密码会提交账号服务验证；iPhone 需登录，Mac 可不登录使用本机核心功能。
 
 ## 产品优势
@@ -89,15 +89,30 @@ VoiceMemory 希望改变这种体验。我们相信，录音的价值不只是�
 
 测试版下载：[Mac DMG](https://github.com/wyihao2010-code/VoiceMemory-website/releases/download/v1.2-beta.2/VoiceMemory-1.2-Build52.dmg)；[iPhone IPA](https://github.com/wyihao2010-code/VoiceMemory-website/releases/download/v1.2-beta.2/VoiceMemoryIOS-1.2-Build5-registered-device.ipa)。iPhone 包仅能安装在签名描述文件中的 1 台已登记设备上，描述文件于 2026 年 10 月 18 日到期。安装限制与 SHA-256 校验值见[版本说明](https://github.com/wyihao2010-code/VoiceMemory-website/releases/tag/v1.2-beta.2)。
 
-## 本地预览
+## 网站维护
 
-本目录为 VoiceMemory 产品介绍网站（无构建依赖的静态站点）：
+本目录为 VoiceMemory 产品介绍网站（无构建依赖的静态站点）。
+
+- **页面素材**：`assets/` 下位图以 WebP 为主，`assets/app-recording.png`、`assets/architecture.jpg`、`voice-memory-icon.png` 作为 `<picture>` 的兼容回退格式。
+- **截图口径**：录音阶段使用真实 App 界面截图，已移除账号昵称与项目数据；产品一览与架构总览为设计稿与结构示意，页面均已就地标注。
+- **缓存控制**：改动 `styles.css` 或 `script.js` 后，必须同步递增 `index.html` 中引用的 `?v=` 版本号，否则访问者可能继续使用缓存的旧文件。
+
+### 本地预览
 
 ```sh
 python3 -m http.server 8000
 ```
 
 打开 <http://localhost:8000>。
+
+### 发布前检查
+
+```sh
+node --check script.js
+git diff --check
+```
+
+并在 1440 / 1024 / 820 / 390 四档宽度下确认：无横向溢出、图片全部加载、汉堡菜单可开合且自动收起、滚动高亮与所在章节一致、减少动态效果模式下内容不隐藏。
 
 ---
 
