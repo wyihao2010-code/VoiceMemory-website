@@ -26,7 +26,7 @@ VoiceMemory 是一款专为 Mac 与 iPhone 打造的智能语音记录与管理�
 ## Mac 与 iPhone，共用一个账号
 
 - **一个账号，两台设备**：邮箱注册与登录，Mac 与 iPhone 使用同一账号，可通过加密包迁移项目与人物。
-- **数据留在各自本机**：录音、转写默认保存在本机；可主动加密迁移；iCloud 同步尚未开放，后续如提供并主动开启，部分结构化数据与已确认声纹向量可能同步。登录不会上传录音和转写。
+- **数据默认在本机**：录音、转写默认保存在本机；可主动加密迁移。新版 Mac 可在符合权益或邀请条件并主动开启后，通过 CloudBase 同步所选资料的密文，原始音频不上传。iCloud 同步尚未开放；登录本身不会上传录音和转写。
 - **迁移与备份都加密**：项目与人物通过加密迁移包在设备间互传，录音包含音频与说话人标签。
 - **系统要求**：Mac 版适用于 macOS 14 或更新版本的 Apple Silicon Mac；iPhone 版适用于 iOS 17 或更新版本。
 
@@ -35,8 +35,8 @@ VoiceMemory 是一款专为 Mac 与 iPhone 打造的智能语音记录与管理�
 云端账号用于身份与权益；iPhone 需要登录，Mac 的本机核心功能可不登录使用：
 
 - **Free**：本地能力完整开放——录音与导入、本机转写、无限人物与声纹学习、进阶声纹分析、项目与双语稿导出、AI 摘要与自定义模板、本地 MCP 与 Agent 接入。
-- **Pro**：本地功能已向所有用户开放，原有 Pro 权益继续保留；权益兑换码激活后，重启与离线均保持。
-- **你的数据不属于云端**：注册与登录密码会提交账号服务验证；iPhone 需登录，Mac 可不登录使用本机核心功能。
+- **Pro**：包含 Free 的全部本地功能，增加 CloudBase 加密同步资格。同步默认关闭，所选文字资料需主动开启后才上传密文；已确认声纹有独立开关，原始音频不上传。当前公测限每账号 20 MiB 密文、3 台设备，服务可能暂时不可用。既有 Pro 权益保留，终身权益也有同步资格。
+- **账号与数据**：注册与登录密码会提交账号服务验证；登录本身不会上传录音或转写。iPhone 需登录，Mac 可不登录使用本地功能；云同步恢复码由用户自行保管。
 
 ## 产品优势
 
@@ -81,13 +81,13 @@ VoiceMemory 希望改变这种体验。我们相信，录音的价值不只是�
 
 - **产品名称**：VoiceMemory
 - **支持平台**：Mac（macOS 14+，Apple Silicon）与 iPhone（iOS 17+）
-- **当前状态**：Mac 与登记测试设备专用 iPhone 测试包已发布
+- **当前状态**：Mac 测试包已发布；iPhone 旧测试包签名已过期，当前无法新安装
 - **版本信息**：以实际发布版本为准，本页面不另行维护固定版本号
 - **权益说明**：免费版与 Pro 版仅展示已正式开放的权益；在线购买渠道尚未开通，当前以兑换码方式发放权益
 
 ## 获取开发进展
 
-测试版下载：[Mac DMG](https://github.com/wyihao2010-code/VoiceMemory-website/releases/download/v1.2-beta.3/VoiceMemory-1.2-Build53.dmg)；[iPhone IPA](https://github.com/wyihao2010-code/VoiceMemory-website/releases/download/v1.2-beta.3/VoiceMemoryIOS-1.2-Build5-registered-device.ipa)。iPhone 包仅能安装在签名描述文件中的 1 台已登记设备上，描述文件于 2026 年 10 月 18 日到期。安装限制与 SHA-256 校验值见[版本说明](https://github.com/wyihao2010-code/VoiceMemory-website/releases/tag/v1.2-beta.3)。
+测试版下载：[Mac DMG](https://github.com/wyihao2010-code/VoiceMemory-website/releases/download/v1.2-beta.4/VoiceMemory-1.2-Build79.dmg)。[iPhone 旧 IPA](https://github.com/wyihao2010-code/VoiceMemory-website/releases/download/v1.2-beta.3/VoiceMemoryIOS-1.2-Build5-registered-device.ipa)的签名描述文件已于 2026 年 10 月 18 日到期，当前无法新安装；本次只更新 Mac。安装限制与 SHA-256 校验值见[Mac 版本说明](https://github.com/wyihao2010-code/VoiceMemory-website/releases/tag/v1.2-beta.4)。
 
 ## 网站维护
 
