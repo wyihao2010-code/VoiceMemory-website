@@ -81,13 +81,13 @@ VoiceMemory 希望改变这种体验。我们相信，录音的价值不只是�
 
 - **产品名称**：VoiceMemory
 - **支持平台**：Mac（macOS 14+，Apple Silicon）与 iPhone（iOS 17+）
-- **当前状态**：Mac 测试包已发布；iPhone 旧测试包签名已过期，当前无法新安装
+- **当前状态**：Mac 测试包与已登记设备专用 iPhone 测试包已发布
 - **版本信息**：以实际发布版本为准，本页面不另行维护固定版本号
 - **权益说明**：免费版与 Pro 版仅展示已正式开放的权益；在线购买渠道尚未开通，当前以兑换码方式发放权益
 
 ## 获取开发进展
 
-测试版下载：[Mac DMG](https://github.com/wyihao2010-code/VoiceMemory-website/releases/download/v1.2-beta.4/VoiceMemory-1.2-Build79.dmg)。[iPhone 旧 IPA](https://github.com/wyihao2010-code/VoiceMemory-website/releases/download/v1.2-beta.3/VoiceMemoryIOS-1.2-Build5-registered-device.ipa)的签名描述文件已于 2026 年 10 月 18 日到期，当前无法新安装；本次只更新 Mac。安装限制与 SHA-256 校验值见[Mac 版本说明](https://github.com/wyihao2010-code/VoiceMemory-website/releases/tag/v1.2-beta.4)。
+测试版下载：[Mac DMG](https://github.com/wyihao2010-code/VoiceMemory-website/releases/download/v1.2-beta.4/VoiceMemory-1.2-Build79.dmg)；[iPhone IPA](https://github.com/wyihao2010-code/VoiceMemory-website/releases/download/v1.2-beta.4/VoiceMemoryIOS-1.2-Build6-registered-device.ipa)。iPhone 包仅签名描述文件中的 1 台已登记设备可安装，开发签名于 2026 年 10 月 29 日到期。安装限制与 SHA-256 校验值见[版本说明](https://github.com/wyihao2010-code/VoiceMemory-website/releases/tag/v1.2-beta.4)。
 
 ## 网站维护
 
