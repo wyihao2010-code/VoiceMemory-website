@@ -87,7 +87,7 @@ VoiceMemory 希望改变这种体验。我们相信，录音的价值不只是�
 
 ## 获取开发进展
 
-测试版下载：[Mac DMG](https://github.com/wyihao2010-code/VoiceMemory-website/releases/download/v1.2-beta.4/VoiceMemory-1.2-Build79.dmg)；[iPhone IPA](https://github.com/wyihao2010-code/VoiceMemory-website/releases/download/v1.2-beta.4/VoiceMemoryIOS-1.2-Build6-registered-device.ipa)。iPhone 包仅签名描述文件中的 1 台已登记设备可安装，开发签名于 2026 年 10 月 29 日到期。安装限制与 SHA-256 校验值见[版本说明](https://github.com/wyihao2010-code/VoiceMemory-website/releases/tag/v1.2-beta.4)。
+测试版下载：[Mac DMG](https://github.com/wyihao2010-code/VoiceMemory-website/releases/download/v1.2-beta.5/VoiceMemory-1.2-Build96.dmg)；[iPhone IPA](https://github.com/wyihao2010-code/VoiceMemory-website/releases/download/v1.2-beta.4/VoiceMemoryIOS-1.2-Build6-registered-device.ipa)。iPhone 包仅签名描述文件中的 1 台已登记设备可安装，开发签名于 2026 年 10 月 29 日到期。安装限制与 SHA-256 校验值见[版本说明](https://github.com/wyihao2010-code/VoiceMemory-website/releases/tag/v1.2-beta.5)。
 
 ## 网站维护
 
