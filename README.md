@@ -17,11 +17,12 @@ VoiceMemory 是一款专为 Mac 与 iPhone 打造的智能语音记录与管理�
 | 功能 | 一句话介绍 |
 |---|---|
 | 语音记录 | 让重要交流完整留存。简洁直观的录音体验，轻松记录会议、访谈与日常交流。 |
-| 内容整理 | 从声音到清晰的文字。将录音内容整理为可阅读的文字，帮助快速回顾重要信息。 |
+| 内容整理 | 从声音到清晰的文字。在 Mac 上按句编辑转写，修改后同步保存到本机记录与 Markdown。 |
 | 人物管理 | 让每个声音都有归属。建立专属人物档案，关联对话记录，让人物与内容管理更加清晰。 |
 | 智能摘要 | 告别冗长的信息整理。从记录中提炼重点内容、重要事项与关键信息，提高回顾效率。 |
 | 项目管理 | 让记录井然有序。按项目集中管理录音和相关内容，构建清晰的信息归档体系。 |
 | 历史回顾 | 重要信息，随时找回。通过分类与搜索快速定位历史记录，减少重复整理的时间。 |
+| 本地 MCP | 支持 Agent 查询项目、录音与人物；导入、事件与摘要请求需在应用内审核。 |
 
 ## Mac 与 iPhone，共用一个账号
 
@@ -81,13 +82,13 @@ VoiceMemory 希望改变这种体验。我们相信，录音的价值不只是�
 
 - **产品名称**：VoiceMemory
 - **支持平台**：Mac（macOS 14+，Apple Silicon）与 iPhone（iOS 17+）
-- **当前状态**：Mac 测试包与已登记设备专用 iPhone 测试包已发布
-- **版本信息**：以实际发布版本为准，本页面不另行维护固定版本号
+- **当前状态**：Mac 测试包开放下载；iPhone 下载入口暂不开放
+- **当前公开版本**：Mac 1.2（Build 102），具体更新和安装限制见版本说明
 - **权益说明**：免费版与 Pro 版仅展示已正式开放的权益；在线购买渠道尚未开通，当前以兑换码方式发放权益
 
 ## 获取开发进展
 
-测试版下载：[Mac DMG](https://github.com/wyihao2010-code/VoiceMemory-website/releases/download/v1.2-beta.5/VoiceMemory-1.2-Build96.dmg)；[iPhone IPA](https://github.com/wyihao2010-code/VoiceMemory-website/releases/download/v1.2-beta.4/VoiceMemoryIOS-1.2-Build6-registered-device.ipa)。iPhone 包仅签名描述文件中的 1 台已登记设备可安装，开发签名于 2026 年 10 月 29 日到期。安装限制与 SHA-256 校验值见[版本说明](https://github.com/wyihao2010-code/VoiceMemory-website/releases/tag/v1.2-beta.5)。
+测试版下载：[Mac DMG](https://github.com/wyihao2010-code/VoiceMemory-website/releases/download/v1.2-beta.6/VoiceMemory-1.2-Build102.dmg)。安装限制与 SHA-256 校验值见[版本说明](https://github.com/wyihao2010-code/VoiceMemory-website/releases/tag/v1.2-beta.6)。iPhone 下载入口暂不开放。
 
 ## 网站维护
 
