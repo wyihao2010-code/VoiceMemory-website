@@ -231,3 +231,9 @@ picture{display:contents}
   .arch-figure figcaption small{font-size:9px}
   .real-screenshot{max-height:none}
 }
+
+/* Return to the shared portfolio without crowding the mobile header. */
+.portfolio-return-mobile{display:none;color:#c6def0;font-size:13px;margin-bottom:22px}
+.portfolio-return-mobile:hover,.portfolio-return-mobile:focus-visible{color:#fff}
+@media(min-width:821px) and (max-width:1150px){.nav{gap:18px}.nav-links{gap:18px}}
+@media(max-width:820px){.portfolio-return-mobile{display:inline-block}}
