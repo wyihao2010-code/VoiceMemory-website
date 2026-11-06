@@ -83,12 +83,12 @@ VoiceMemory 希望改变这种体验。我们相信，录音的价值不只是�
 - **产品名称**：VoiceMemory
 - **支持平台**：Mac（macOS 14+，Apple Silicon）与 iPhone（iOS 17+）
 - **当前状态**：Mac 测试包开放下载；iPhone 下载入口暂不开放
-- **当前公开版本**：Mac 1.2（Build 102），具体更新和安装限制见版本说明
+- **当前公开版本**：Mac 1.2（Build 111），具体更新和安装限制见版本说明
 - **权益说明**：免费版与 Pro 版仅展示已正式开放的权益；在线购买渠道尚未开通，当前以兑换码方式发放权益
 
 ## 获取开发进展
 
-测试版下载：[Mac DMG](https://github.com/wyihao2010-code/VoiceMemory-website/releases/download/v1.2-beta.6/VoiceMemory-1.2-Build102.dmg)。安装限制与 SHA-256 校验值见[版本说明](https://github.com/wyihao2010-code/VoiceMemory-website/releases/tag/v1.2-beta.6)。iPhone 下载入口暂不开放。
+测试版下载：[Mac DMG](https://github.com/wyihao2010-code/VoiceMemory-website/releases/download/v1.2-beta.7/VoiceMemory-1.2-Build111.dmg)。安装限制与 SHA-256 校验值见[版本说明](https://github.com/wyihao2010-code/VoiceMemory-website/releases/tag/v1.2-beta.7)。iPhone 下载入口暂不开放。
 
 ## 网站维护
 
