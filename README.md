@@ -78,29 +78,29 @@ VoiceMemory 希望改变这种体验。我们相信，录音的价值不只是�
 
 **记录声音，留住价值。**
 
-## 近期开发进展（2026-11-10）
+## 最新公测版：Mac 2.0（Build 148）
 
-以下为 **Mac 2.0（Build 148）本地开发版**的已实现内容，**尚未包含在当前公开下载的 Mac 1.2（Build 111）安装包中**。
+**2026 年 11 月 10 日已开放 Mac 2.0（Build 148）Beta 测试安装包**。相比上一公开版本（1.2 Build 111），本次主要改进：
 
-- **多个自定义 AI 服务**：可新建并独立命名多个 OpenAI 兼容服务，各自保留模型、接口地址与凭证范围。
-- **摘要稳定性**：针对 Agnes 等兼容模型的输出长度限制增加自动恢复；生成摘要时，无法从转写核实的数字在本地遮盖，不因此反复请求模型，仍保留原文事实校验。
-- **结构化智能总结**：独立生成总结、待办和智能章节；对失败片段提供恢复处理，已完成内容可在本机保留。
-- **交互优化**：「AI总结」生成过程中支持取消后续请求；展开较长的分段内容后可滚动查看。
-- **验证范围**：已通过本地自动化回归测试（463 项执行、0 失败、9 项跳过）、macOS 27 SDK 构建及本地交付一致性验证。真实第三方模型接口、展开后实际滚动交互仍需进一步验收。
+- **多个自定义 AI 服务**：支持新建并独立命名多个 OpenAI 兼容服务，各自配置模型、地址与凭证范围。
+- **AI 摘要稳定性**：针对 Agnes 等兼容模型的输出长度限制加入自动恢复；原文无法核实的数字会在本机遮盖，减少为同一摘要反复消耗 Token 的情况。
+- **智能总结**：录音可以独立生成总结、待办和智能章节，支持已完成分段恢复和生成期间取消。
+- **阅读与管理**：修复展开分段后无法下滑的问题，优化项目与录音管理界面。
+- **质量验证**：本地回归测试 463 项执行、0 失败、9 项跳过；公测签名安全审计、隔离冷启动、DMG 完整性和包内版本验证通过。
 
-说明：以上开发进展仅供了解产品方向，不代表公开版本已经支持，也不构成 Build 148 的公开发布。现有官网安装包、Release 附件及 SHA-256 校验值保持不变。
+**重要限制：** 本安装包采用本地签名，**尚未经过 Apple 公证**，首次打开可能需要在 macOS 隐私与安全性中手动允许。iCloud / CloudKit 能力不保证在其他 Mac 上可用。第三方 AI 服务与实际设备交互仍需用户自行验证。旧版 Build 111 保留在历史 Releases，可按需回退。
 
 ## 下载与版本
 
 - **产品名称**：VoiceMemory
 - **支持平台**：Mac（macOS 14+，Apple Silicon）与 iPhone（iOS 17+）
 - **当前状态**：Mac 测试包开放下载；iPhone 下载入口暂不开放
-- **当前公开版本**：Mac 1.2（Build 111），具体更新和安装限制见版本说明
+- **当前公开版本**：Mac 2.0（Build 148）Beta 测试版，安装限制和校验值见版本说明
 - **权益说明**：免费版与 Pro 版仅展示已正式开放的权益；在线购买渠道尚未开通，当前以兑换码方式发放权益
 
 ## 获取开发进展
 
-测试版下载：[Mac DMG](https://github.com/wyihao2010-code/VoiceMemory-website/releases/download/v1.2-beta.7/VoiceMemory-1.2-Build111.dmg)。安装限制与 SHA-256 校验值见[版本说明](https://github.com/wyihao2010-code/VoiceMemory-website/releases/tag/v1.2-beta.7)。iPhone 下载入口暂不开放。
+测试版下载：[Mac 2.0（Build 148）DMG](https://github.com/wyihao2010-code/VoiceMemory-website/releases/download/v2.0-beta.1/VoiceMemory-2.0-Build148.dmg)。安装限制与 SHA-256 校验值见[2.0 版本说明](https://github.com/wyihao2010-code/VoiceMemory-website/releases/tag/v2.0-beta.1)。历史 [1.2（Build 111）版本](https://github.com/wyihao2010-code/VoiceMemory-website/releases/tag/v1.2-beta.7) 仍可下载；iPhone 下载入口暂不开放。
 
 ## 网站维护
 
